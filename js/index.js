@@ -4,14 +4,14 @@ var planet = [
 	{
 		name: "Earth",
 		url:
-			"../earth.jpg",
+			"https://blogs.agu.org/wildwildscience/files/2012/03/VIIRS.8Feb2012.30S145E-web.png",
 		mass: 5.972 * Math.pow(10, 24),
 		info:
 			"One thing that makes Earth habitable and that many other planets don't have is water. Water is essential to life, without it we'd (all earth species) would be dead"
 	},
 	{
 		name: "Mars",
-		url: "../Mars.png",
+		url: "https://openclipart.org/image/2400px/svg_to_png/247374/Mars.png",
 		mass: 6.39 * Math.pow(10, 23),
 		info: ""
 	},
@@ -25,7 +25,7 @@ var planet = [
 	{
 		name: "Gliese 581g",
 		url:
-			"../gliese.jpg",
+			"https://upload.wikimedia.org/wikipedia/commons/6/6e/TerraformedMarsGlobeRealistic.jpg",
 		info:
 			"Gliese 581g, a potentially habitable planet, shares many things in common with the earth. It has 37 days in  a month, quite close to 30, as well as being the right distance from the sun, possibly allowing for water",
 		mass: 5.972 * 3.5 * Math.pow(10, 24) + "<i> approx.</i>"
@@ -38,6 +38,8 @@ window.addEventListener('click', function (evt) {
 attrb.innerHTML="<b>Sources</b> <br> NASA <br> Space.org <br> Solar System Quick"
 		}
 });
+
+//Variables
 var title = document.getElementById("title");
 var info = document.getElementById("info");
 var mass = document.getElementById("mass");
@@ -47,8 +49,8 @@ var attrb = document.getElementById("attrb");
 function changePlanet() {
 	var activePlanet = planet[next(planet)];
 	document.getElementById("planet").src = activePlanet.url;
+	document.getElementById("planet").alt = activePlanet.name;
 	info.innerHTML = activePlanet.info;
-
 	title.innerHTML = activePlanet.name;
 	mass.innerHTML = "Mass: " + activePlanet.mass;
 }
