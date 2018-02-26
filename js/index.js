@@ -4,7 +4,7 @@ var planet = [
 	{
 		name: "Earth",
 		url:
-			"earth.jpg",
+			"../earth.jpg",
 		mass: 5.972 * Math.pow(10, 24),
 		info:
 			"One thing that makes Earth habitable and that many other planets don't have is water. Water is essential to life, without it we'd (all earth species) would be dead"
