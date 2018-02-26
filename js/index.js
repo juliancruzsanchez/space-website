@@ -11,7 +11,7 @@ var planet = [
 	},
 	{
 		name: "Mars",
-		url: "https://openclipart.org/image/2400px/svg_to_png/247374/Mars.png",
+		url: "../Mars.png",
 		mass: 6.39 * Math.pow(10, 23),
 		info: ""
 	},
