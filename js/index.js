@@ -1,4 +1,5 @@
 var curr = 0;
+var inSrc=0;
 var planet = [
 	"placeholder",
 	{
@@ -34,9 +35,16 @@ var planet = [
 
 window.addEventListener('click', function (evt) {
     if (evt.detail === 3) {
+	    	if inSrc == 0 {
+
 	content.style="visibility: hidden";
 attrb.innerHTML="<b>Sources</b> <br> NASA <br> Space.org <br> Solar System Quick"
+	    inSrc=1;
 		}
+    }else{location.reload();
+
+		
+	}
 });
 
 //Variables
