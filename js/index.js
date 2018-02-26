@@ -4,7 +4,7 @@ var planet = [
 	{
 		name: "Earth",
 		url:
-			"https://blogs.agu.org/wildwildscience/files/2012/03/VIIRS.8Feb2012.30S145E-web.png",
+			"earth.jpg",
 		mass: 5.972 * Math.pow(10, 24),
 		info:
 			"One thing that makes Earth habitable and that many other planets don't have is water. Water is essential to life, without it we'd (all earth species) would be dead"
@@ -25,7 +25,7 @@ var planet = [
 	{
 		name: "Gliese 581g",
 		url:
-			"https://upload.wikimedia.org/wikipedia/commons/6/6e/TerraformedMarsGlobeRealistic.jpg",
+			"../gliese.jpg",
 		info:
 			"Gliese 581g, a potentially habitable planet, shares many things in common with the earth. It has 37 days in  a month, quite close to 30, as well as being the right distance from the sun, possibly allowing for water",
 		mass: 5.972 * 3.5 * Math.pow(10, 24) + "<i> approx.</i>"
